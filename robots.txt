@@ -1,0 +1,5 @@
+# Robots.txt for Rah-e-Deen-Islam (راہِ دینِ اسلام)
+User-agent: *
+Allow: /
+
+Sitemap: https://rah-e-deen-islam.vercel.app/sitemap.xml

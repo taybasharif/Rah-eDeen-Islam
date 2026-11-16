@@ -1,0 +1,25 @@
+{
+  "name": "rah-e-deen-islam",
+  "version": "2.0.0",
+  "description": "راہِ دینِ اسلام | Rah-e-Deen-Islam — مستند اسلامی تعلیمی ویب سائٹ برائے پاکستان (Authentic Islamic Educational Web Portal for Pakistan)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "build": "node build.js",
+    "test": "node test.js"
+  },
+  "keywords": [
+    "islam",
+    "quran",
+    "hadith",
+    "prayer-times",
+    "pakistan",
+    "duas",
+    "durood",
+    "wudu",
+    "fiqh"
+  ],
+  "author": "Tayyaba",
+  "license": "ISC"
+}
