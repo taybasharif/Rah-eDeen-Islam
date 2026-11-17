@@ -25,3 +25,4 @@ desktop.ini
 # Blogger XML backups & legacy guides (skipped for website repo)
 blogger/
 
+bundle.js
