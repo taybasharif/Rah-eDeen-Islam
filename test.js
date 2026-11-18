@@ -155,7 +155,7 @@ assert(html.includes('google-site-verification'), 'Google verification tag must 
 assert(html.includes('application/ld+json'), 'Schema.org JSON-LD must be present');
 
 const sitemapContent = fs.readFileSync(path.join(BASE_DIR, 'sitemap.xml'), 'utf8');
-assert(sitemapContent.includes('https://rah-e-deen-islam.vercel.app/'), 'Sitemap must contain canonical base URL');
+assert(sitemapContent.includes('https://rah-edeen-islam.vercel.app/'), 'Sitemap must contain canonical base URL');
 assert(sitemapContent.includes('#hadith'), 'Sitemap must list #hadith');
 assert(sitemapContent.includes('#prayer-times'), 'Sitemap must list #prayer-times');
 
@@ -167,10 +167,10 @@ console.log('✅ TEST 5 PASSED: Google SEO, Sitemap, Robots & Structured Data ve
 
 // TEST 6: Founder & Contact Email Integrity
 console.log('TEST 6: Validating Founder Information & Contact Email...');
-assert(html.includes('hhooregul@gmail.com'), 'Founder contact email must be present in HTML');
-assert(html.includes('mailto:hhooregul@gmail.com'), 'Clickable mailto: link must be present');
+assert(html.includes('taybasharif96@gmail.com'), 'Founder contact email must be present in HTML');
+assert(html.includes('mailto:taybasharif96@gmail.com'), 'Clickable mailto: link must be present');
 assert(html.includes('طیبہ') || html.includes('Tayyaba'), 'Founder name must be acknowledged');
-console.log('   ✓ Email: hhooregul@gmail.com with clickable mailto: link.');
+console.log('   ✓ Email: taybasharif96@gmail.com with clickable mailto: link.');
 console.log('   ✓ Founder: طیبہ (Tayyaba).');
 console.log('✅ TEST 6 PASSED: Founder and contact email integrity verified.\n');
 
