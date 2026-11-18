@@ -1,6 +1,6 @@
 /**
  * Contact & "Ask a Question" Handler for Rah-e-Deen-Islam
- * Contact Email: hhooregul@gmail.com
+ * Contact Email: taybasharif96@gmail.com
  * Founder: Tayyaba
  */
 
@@ -38,7 +38,7 @@ function handleContactFormSubmit(event) {
   }
 
   // Construct direct mailto trigger for hhooregul@gmail.com
-  const mailtoUrl = `mailto:hhooregul@gmail.com?subject=${encodeURIComponent('[راہِ دینِ اسلام رابطہ] ' + subject)}&body=${encodeURIComponent(
+  const mailtoUrl = `mailto:taybasharif96@gmail.com?subject=${encodeURIComponent('[راہِ دینِ اسلام رابطہ] ' + subject)}&body=${encodeURIComponent(
     `نام: ${name}\nای میل: ${email}\n\nپیغام:\n${message}\n\n---\nارسال بذریعہ ویب سائٹ: راہِ دینِ اسلام`
   )}`;
 
@@ -83,7 +83,7 @@ function handleAskQuestionSubmit(event) {
     return;
   }
 
-  const mailtoUrl = `mailto:hhooregul@gmail.com?subject=${encodeURIComponent('[راہِ دینِ اسلام سوال] زمرہ: ' + category)}&body=${encodeURIComponent(
+  const mailtoUrl = `mailto:taybasharif96@gmail.com?subject=${encodeURIComponent('[راہِ دینِ اسلام سوال] زمرہ: ' + category)}&body=${encodeURIComponent(
     `نام سائل: ${name}\nای میل: ${email}\nزمرہ: ${category}\n\nسوال:\n${question}\n\nنوٹ: سائل کو آگاہ کر دیا گیا ہے کہ یہ تحقیقی و تعلیمی مقصد کے لیے ہے اور باقاعدہ فتوٰی کے لیے دار الافتاء سے رجوع لازم ہے۔`
   )}`;
 
