@@ -2,4 +2,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://rah-e-deen-islam.vercel.app/sitemap.xml
+Sitemap: https://rah-edeen-islam.vercel.app/sitemap.xml

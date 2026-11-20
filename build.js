@@ -108,11 +108,13 @@ coreViews.forEach(v => {
 console.log('\n--- Step 4: Search Engine Discovery (Sitemap & Robots) ---');
 const sitemap = fs.readFileSync(path.join(BASE_DIR, 'sitemap.xml'), 'utf8');
 check('Sitemap conforms to sitemaps.org', sitemap.includes('http://www.sitemaps.org/schemas/sitemap/0.9'));
-check('Sitemap has all 12 view routes', coreViews.every(v => sitemap.includes(`#${v.replace('view-', '')}`) || v === 'view-home'));
+check('Sitemap uses clean URLs without fragment (#)', !sitemap.includes('/#'));
+check('Sitemap uses canonical domain https://rah-edeen-islam.vercel.app', sitemap.includes('https://rah-edeen-islam.vercel.app/'));
+check('Sitemap has all 12 view routes', coreViews.every(v => sitemap.includes(`/${v.replace('view-', '')}`) || v === 'view-home'));
 
 const robots = fs.readFileSync(path.join(BASE_DIR, 'robots.txt'), 'utf8');
 check('Robots allows crawling', robots.includes('Allow: /'));
-check('Robots points to sitemap', robots.includes('sitemap.xml'));
+check('Robots points to sitemap', robots.includes('https://rah-edeen-islam.vercel.app/sitemap.xml'));
 
 // 5. Verify Vercel Configuration
 console.log('\n--- Step 5: Vercel Deployment Configuration ---');
