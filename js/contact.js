@@ -37,13 +37,13 @@ function handleContactFormSubmit(event) {
     return;
   }
 
-  // Construct direct mailto trigger for hhooregul@gmail.com
+  // Construct direct mailto trigger for taybasharif96@gmail.com
   const mailtoUrl = `mailto:taybasharif96@gmail.com?subject=${encodeURIComponent('[راہِ دینِ اسلام رابطہ] ' + subject)}&body=${encodeURIComponent(
     `نام: ${name}\nای میل: ${email}\n\nپیغام:\n${message}\n\n---\nارسال بذریعہ ویب سائٹ: راہِ دینِ اسلام`
   )}`;
 
   // Show honest feedback and trigger mail client
-  showStatusMessage(statusEl, 'جزاکم اللہ خیراً! آپ کا ای میل کلائنٹ کھولا جا رہا ہے تاکہ پیغام براہِ راست محترمہ طیبہ (hhooregul@gmail.com) کو ارسال کیا جا سکے۔', 'success');
+  showStatusMessage(statusEl, 'جزاکم اللہ خیراً! آپ کا ای میل کلائنٹ کھولا جا رہا ہے تاکہ پیغام براہِ راست محترمہ طیبہ (taybasharif96@gmail.com) کو ارسال کیا جا سکے۔', 'success');
   
   window.location.href = mailtoUrl;
 
